@@ -4,16 +4,20 @@ use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\LocaleController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\App;
 
+
+    Route::get('locale/{lang}', [LocaleController::class,'setLocale']);
 
 //Auth routesss as guest
 Route::group(['middleware'=> ['guest']], function () {
-    Route::get('/register', [AuthController::class, 'register'])->name('register');
-    Route::post('/register', [AuthController::class, 'registerPost'])->name('register');
-    Route::get('/login', [AuthController::class, 'login'])->name('login');
-    Route::post('/login', [AuthController::class, 'loginPost'])->name('login');
-    Route::get('/', [AuthController::class, 'login']);
+        Route::get('/register', [AuthController::class, 'register'])->name('register');
+        Route::post('/register', [AuthController::class, 'registerPost'])->name('register');
+        Route::get('/login', [AuthController::class, 'login'])->name('login');
+        Route::post('/login', [AuthController::class, 'loginPost'])->name('login');
+        Route::get('/', [AuthController::class, 'login']);
 });
 
 

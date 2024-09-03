@@ -26,25 +26,29 @@
                     <form action="{{route('register')}}" method="post">
                         @csrf
                         <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
+                            <label for="name" class="form-label">@lang('messages.name')</label>
                             <input type="text" name="name" class="form-control" id="name" required>
                         </div>
                         <div class="mb-3">
-                            <label for="name" class="form-label">Email</label>
+                            <label for="name" class="form-label">@lang('messages.email')</label>
                             <input type="email" name="email" class="form-control" id="email" required>
                         </div>
                         <div class="mb-3">
-                            <label for="password" class="form-label">Password</label>
+                            <label for="password" class="form-label">@lang('messages.password')</label>
                             <input type="password" name="password" class="form-control" id="password" required>
                         </div>
                         <div class="mb-3">
                             <div class="d-grid">
-                                <button class="btn btn-primary">Register</button>
+                                <button class="btn btn-primary">@lang('messages.register-btn')</button>
                             </div>
                         </div>
                     </form>
                     <h5 class="mb-3 text-center"> or</h5>
-                    <a href="/login" class="mb-3 btn btn-primary d-grid">Login</a>
+                    <a href="/login" class="mb-3 btn btn-primary d-grid">@lang('messages.login-btn')</a>
+                    <div class="d-flex justify-content-center">
+                        <a class="m-3" href="locale/en">English</a>
+                        <a class="m-3 " href="locale/fr">French</a>
+                    </div>
                 </div>
             </div>
         </div>
