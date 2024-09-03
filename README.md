@@ -1,3 +1,32 @@
+As job requirement is to create a mini CRM using Laravel and MySQL to be completed in the span of 48 hours (Im sleep deprived haha)
+Login credentials (seeded)
+1. un:'admin@admin' pw:'password'
+2. un:'dummy@dummy' pw:'dummy'
+
+
+Author of this Project: John Rafael P. Masilungan
+Contact me: jmasilungan1822@gmail.com
+Phone: 09296360633
+
+Created: ‎September ‎1, ‎2024, ‏‎6:50:39 PM
+Finished: September 3, 2024, 11:54 AM
+
+Techs used
+Languages: PHP(Laravel 11.x Blade templating), some Javascript,
+DB: MySQL
+Others: Bootstrap 5, jQuery, Datatables.net, SMTP.
+
+"This project made me learn Laravel so much!"
+
+
+
+
+
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
