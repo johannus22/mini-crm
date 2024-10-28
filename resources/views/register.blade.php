@@ -46,8 +46,11 @@
                     <h5 class="mb-3 text-center"> or</h5>
                     <a href="/login" class="mb-3 btn btn-primary d-grid">@lang('messages.login-btn')</a>
                     <div class="d-flex justify-content-center">
-                        <a class="m-3" href="locale/en">English</a>
-                        <a class="m-3 " href="locale/fr">French</a>
+                        <a class="m-3 col-md-1 " href="locale/en">En</a>
+                      <a class="m-3 col-md-1" href="locale/fr">Fr</a>
+                      <a class="m-3 col-md-1" href="locale/ar">Ar</a>
+                      <a class="m-3 col-md-1" href="locale/jp">Jp</a>
+                      <a class="m-3 col-md-1" href="locale/ge">Ge</a>
                     </div>
                 </div>
             </div>

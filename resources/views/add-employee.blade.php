@@ -24,7 +24,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="home">@lang('messages.home')</a>
+                    <a class="nav-link" aria-current="page" href="/home">@lang('messages.home')</a>
                 </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="/companies">@lang('messages.companies')</a>
@@ -40,8 +40,11 @@
                         @lang('messages.dpdwn')
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="locale/en">English</a>
-                      <a class="dropdown-item" href="locale/fr">French</a>
+                        <a class="dropdown-item" href="{{ url('locale/en') }}">English</a>
+                        <a class="dropdown-item" href="{{ url('locale/fr') }}">French</a>
+                        <a class="dropdown-item" href="{{ url('locale/ar') }}">Arabic</a>
+                        <a class="dropdown-item" href="{{ url('locale/jp') }}">Japanese</a>
+                        <a class="dropdown-item" href="{{ url('locale/ge') }}">German</a>
                     </div>
                   </div>
 

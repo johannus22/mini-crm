@@ -43,8 +43,11 @@
                     <a href="/register" class="mb-3 btn btn-primary d-grid">@lang('messages.register-btn')</a>
 
                     <div class="d-flex justify-content-center">
-                        <a class="m-3" href="locale/en">English</a>
-                        <a class="m-3 " href="locale/fr">French</a>
+                      <a class="m-3 col-md-1 " href="locale/en">En</a>
+                      <a class="m-3 col-md-1" href="locale/fr">Fr</a>
+                      <a class="m-3 col-md-1" href="locale/ar">Ar</a>
+                      <a class="m-3 col-md-1" href="locale/jp">Jp</a>
+                      <a class="m-3 col-md-1" href="locale/ge">Ge</a>
                     </div>
                 </div>
             </div>

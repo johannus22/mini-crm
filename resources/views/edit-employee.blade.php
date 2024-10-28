@@ -39,8 +39,12 @@
                         @lang('messages.dpdwn')
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="locale/en">English</a>
-                      <a class="dropdown-item" href="locale/fr">French</a>
+                        <a class="dropdown-item" href="locale/en">English</a>
+                        <a class="dropdown-item" href="locale/fr">French</a>
+                        <a class="dropdown-item" href="locale/ar">Arabic</a>
+                        <a class="dropdown-item" href="locale/jp">Japanese</a>
+                        <a class="dropdown-item" href="locale/ge">German</a>
+
                     </div>
                   </div>
 
