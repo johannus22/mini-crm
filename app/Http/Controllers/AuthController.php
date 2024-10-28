@@ -39,9 +39,18 @@ class AuthController extends Controller
         return back()->with('error','Invalid Username or Password!');
     }
 
-    public function logout(){
-        Auth::logout();
-        return redirect()->route('login');
+    public function logout(Request $request){
+        auth()->logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+
+        // Clear browser cache
+        return redirect('/login')->withHeaders([
+            'Cache-Control' => 'no-cache, no-store, max-age=0, must-revalidate',
+            'Pragma' => 'no-cache',
+            'Expires' => 'Sun, 02 Jan 1990 00:00:00 GMT',
+        ]);
     }
+
 
 }
