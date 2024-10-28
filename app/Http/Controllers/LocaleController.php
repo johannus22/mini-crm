@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Session;
 class LocaleController extends Controller
 {
     public function setLocale($lang){
-        if(in_array($lang, ['en', 'fr'])){
+        if(in_array($lang, ['en', 'fr', 'ar', 'jp', 'ge'])){
             App::setLocale($lang);
             Session::put('locale', $lang);
         }
